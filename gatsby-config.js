@@ -7,7 +7,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: "https://lindeman.tk/graphql",
+        url: "https://lindeman.tk/portfolio/graphql",
       },
     },
     "gatsby-plugin-image",
