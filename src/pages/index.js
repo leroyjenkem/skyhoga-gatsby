@@ -1,23 +1,47 @@
-// Step 1: Import React
-import * as React from 'react'
+import React from "react"
+import { graphql } from "gatsby"
 import { Link } from 'gatsby'
-import '../styles/style.css'
 
-// Step 2: Define your component
-const IndexPage = () => {
-  return (
-    <main>
-    <nav className="navbar">
-      <ul>
-          <li className="show"><Link to="/PortfolioHome">Home</Link></li>
-          <li className="show"><Link to="/WhatIsSkyhoga">What is SKYHØGA?</Link></li>
-          <li className="show"><Link to="/OurMission">Our mission</Link></li>
-          <li className="show"><Link to="/ShowYourSupport">Show your support</Link></li>
-          <li className="show"><Link to="/GalleryPage">About us</Link></li>
-      </ul>
-    </nav>
-    </main>
-  )
+const md = (data) => {
+  const { frontmatter, html } = data.data.allMarkdownRemark.edges[0].node
+  console.log(frontmatter.title)
+  return (<div>
+    <h1>{frontmatter.title}</h1>
+    <p>{frontmatter.date}</p>
+    <div
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  </div>)
 }
-// Step 3: Export your component
-export default IndexPage
+
+const PortfolioHome = ({ data }) => (
+  <div>
+  <nav className="navbar">
+    <ul>
+        <li className="show"><Link to="/SkyhogaHome">Home</Link></li>
+        <li className="show"><Link to="/GalleryPage">What is SKYHØGA?</Link></li>
+    </ul>
+  </nav>
+    {md({ data })}
+  </div>
+)
+
+export const query = graphql`
+query {
+  allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/home/"}}
+  ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date(formatString: "DD MMMM YYYY")
+          }
+          html
+        }
+      }
+    }
+}
+`
+
+export default PortfolioHome;
