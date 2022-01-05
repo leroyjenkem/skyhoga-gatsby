@@ -20,6 +20,7 @@
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^2.4.0",
     "gatsby-plugin-sharp": "^4.4.0",
+    "gatsby-plugin-slug": "^2.0.0",
     "gatsby-remark-autolink-headers": "^5.4.0",
     "gatsby-remark-copy-linked-files": "^5.4.0",
     "gatsby-remark-graphviz": "^4.4.0",

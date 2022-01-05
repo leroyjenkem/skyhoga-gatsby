@@ -1,13 +1,14 @@
 ---
 title: 'Privacy Policy'
 date: '2022-01-02T17:22:16+00:00'
-status: draft
-permalink: '/?page_id=3'
+status: publish
+permalink: /portfolio/privacypolicy
 author: admin
 excerpt: ''
 type: page
 id: 3
-template: PrivacyPolicy
+slug: '/portfolio/privacypolicy/'
+template: 'privacypolicy'
 ---
 Who we are
 ----------
