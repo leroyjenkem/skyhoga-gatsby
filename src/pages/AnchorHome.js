@@ -1,5 +1,7 @@
 import React from "react";
-import '../styles/style.css';
+import '../skyhogastyle.css';
+
+
 
 
 function AnchorHome () {
@@ -11,7 +13,7 @@ function AnchorHome () {
 
     <div className="navbar">
       <div className="show">
-      <a className="show" href="#skyhoga">Home</a>
+      <a className="show" href="/#skyhoga">Home</a>
       <a className="show" href="#what-is-skyhoga">What is SKYHØGA?</a>
       <a className="show" href="#our-mission">Our mission</a>
       <a className="show" href="#show-support">Show your support</a>
@@ -21,7 +23,7 @@ function AnchorHome () {
 
     <a id="skyhoga">
       <div className="logo-container">
-        <img id="logo" src="../images/logo.png" />
+        <img id="logo" src={`/logo.png`} alt="skyhogalogo.png" />
 
         <h3 className="pink">"Jag ska bli so Satans skyhög."</h3>
       </div>
@@ -42,12 +44,15 @@ function AnchorHome () {
         </div>
       </a>
 
-        <div className="second section"/>
+        <div className="second section">
+          <img src={`/login1.png`} alt="imageofloginscreen1.png" />
+          <img src={`/login2.png`} alt="imageofloginscreen2.png" />
+        </div>
 
 
 
         <div className="third section">
-          <img src="../images/morals.png"/>
+          <img src={`/morals.png`} alt="moralobligation.png"/>
         </div>
 
 
@@ -85,7 +90,10 @@ function AnchorHome () {
         </div>
       </a>
 
-        <div className="sixth section"/>
+        <div className="sixth section">
+          <img src={`/listings.png`} alt="imageoflistingview.png"/>
+          <img src={`/profile.png`} alt="imageofprofileview.png"/>
+        </div>
 
 
       <a id="about">
@@ -106,11 +114,12 @@ function AnchorHome () {
 
       <div className="eight section">
 
-      <img src="../images/valuess.png"/>
+      <img src={`/valuess.png`} alt="corevalues.png"/>
 
 
       </div>
     </div>
+
     </div>
 
   );

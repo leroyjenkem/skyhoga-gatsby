@@ -1,15 +1,15 @@
 import  React from 'react';
 import { Link } from "gatsby";
+import '../skyhogaspastyle.module.css';
 
 
 
 
 
-function Header () {
+export default function Header () {
     return (
-    <>
 
-    <div>
+    <div className="spacontainer">
       <header>
       <nav className="navbar">
         <ul>
@@ -21,16 +21,7 @@ function Header () {
         </ul>
       </nav>
       </header>
-      <div className="Content">
+    </div>
 
-
-
-      </div>
-      </div>
-
-    </>
-  );
-}
-
-
-export default Header;
+  )
+};

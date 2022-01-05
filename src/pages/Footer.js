@@ -1,4 +1,5 @@
 import React from 'react';
+import '../skyhogastyle.css';
 
 function Footer () {
   return (

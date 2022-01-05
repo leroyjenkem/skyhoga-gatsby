@@ -1,9 +1,13 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+import '../skyhogaspastyle.css';
 
 export default function WhatIsSkyhoga() {
 
   return (
-    <div>
+    <>
+
+    <div className="spacontainer">
       <div className="first section">
         <h3>
           What is SKYHØGA?
@@ -17,10 +21,11 @@ export default function WhatIsSkyhoga() {
 
       <div className="second section">
 
-
+        <img src={`/login1.png`} alt="imageofloginscreen1.png" />
+        <img src={`/login2.png`} alt="imageofloginscreen2.png" />
 
       </div>
       </div>
-
+      </>
   )
 };

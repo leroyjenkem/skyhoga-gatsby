@@ -15,12 +15,14 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@artsy/fresnel": "^3.2.1",
     "gatsby": "^4.4.0",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-fresnel": "^1.0.1",
+    "gatsby-plugin-gatsby-cloud": "^4.4.0",
     "gatsby-plugin-image": "^2.4.0",
     "gatsby-plugin-sharp": "^4.4.0",
     "gatsby-plugin-slug": "^2.0.0",
+    "gatsby-plugin-typescript": "^4.4.0",
     "gatsby-remark-autolink-headers": "^5.4.0",
     "gatsby-remark-copy-linked-files": "^5.4.0",
     "gatsby-remark-graphviz": "^4.4.0",
@@ -36,6 +38,7 @@
     "html-react-parser": "^1.4.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
     "uuid": "^8.3.2"
   }
 }

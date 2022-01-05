@@ -1,8 +1,9 @@
 import  React from 'react';
+import '../skyhogaspastyle.module.css';
 
 function ShowYourSupport () {
   return (
-    <>
+    <div  className="spacontainer">
       <div className="fifth section">
         <h3>
           Show your support
@@ -20,9 +21,10 @@ function ShowYourSupport () {
       </div>
 
       <div className="sixth section">
-
+        <img src={`/listings.png`} alt="imageoflistingview.png"/>
+        <img src={`/profile.png`} alt="imageofprofileview.png"/>
       </div>
-  </>
+  </div>
   )
 }
 

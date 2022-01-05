@@ -1,8 +1,9 @@
 import React from 'react';
+import '../skyhogaspastyle.module.css';
 
-function AboutUs () {
+export default function AboutUs () {
   return (
-    <>
+    <div className="spacontainer">
 
       <div className="seventh section">
         <h3>
@@ -19,11 +20,9 @@ function AboutUs () {
       </div>
 
     <div className="eight section">
-
+        <img src={`/valuess.png`} alt="corevalues.png"/>
 
     </div>
-  </>
+  </div>
   )
-}
-
-export default AboutUs;
+};

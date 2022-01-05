@@ -10,10 +10,23 @@ module.exports = {
         url: "https://lindeman.tk/portfolio/graphql",
       },
     },
+    `gatsby-plugin-gatsby-cloud`,
+    "gatsby-plugin-typescript",
     "gatsby-plugin-image",
     "gatsby-plugin-slug",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-plugin-fresnel`,
+      options: {
+        breakpoints: {
+          sm: 0,
+          md: 768,
+          lg: 1024,
+          xl: 1192,
+        },
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -63,10 +76,7 @@ module.exports = {
               dashes: `oldschool`,
             },
           },
-          `gatsby-remark-autolink-headers`,
-          `gatsby-remark-graphviz`, // graphviz before prismjs
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-katex`,
+
         ],
     },
   },
