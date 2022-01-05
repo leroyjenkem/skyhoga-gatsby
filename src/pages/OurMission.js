@@ -1,15 +1,14 @@
-import * as React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
 
 function OurMission () {
   return (
     <>
     <div className="third section">
-      <img src="http://localhost/wp/wordpress/wp-content/reactpress/apps/skyhigh/public/images/morals.png"/>
+
     </div>
 
 
-  <a id="What_is_our_mission?">
+
     <div className="fourth section">
     <h3>
       What is our mission?
@@ -23,7 +22,7 @@ function OurMission () {
     </p>
 
     </div>
-  </a>
+
   </>
   )
 }

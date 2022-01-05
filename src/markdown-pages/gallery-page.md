@@ -7,6 +7,7 @@ author: admin
 excerpt: ''
 type: page
 id: 46
+template: GalleryPage
 ---
 <figure class="wp-block-gallery columns-4 is-cropped">- <figure>[![](../uploads/2022/01/1.jpg)](https://lindeman.tk/portfolio/wp-content/uploads/2022/01/1.jpg)</figure>
 - <figure>[![](../uploads/2022/01/2.jpg)](https://lindeman.tk/portfolio/wp-content/uploads/2022/01/2.jpg)</figure>

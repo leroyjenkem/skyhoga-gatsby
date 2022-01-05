@@ -1,10 +1,9 @@
-import * as React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
 
 function AboutUs () {
   return (
     <>
-    <a id="More_about_us">
+
       <div className="seventh section">
         <h3>
           More about us
@@ -18,11 +17,9 @@ function AboutUs () {
           of our shared cause.<br/>420 420 420 420 420 420 420 420 420 420 420
         </p>
       </div>
-    </a>
 
     <div className="eight section">
 
-    <img src="http://localhost/wp/wordpress/wp-content/reactpress/apps/skyhigh/public/images/valuess.png" />
 
     </div>
   </>

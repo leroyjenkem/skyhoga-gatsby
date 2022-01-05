@@ -1,15 +1,9 @@
-import * as React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
 
+export default function WhatIsSkyhoga() {
 
-
-const WhatIsSkyhoga =  () =>  {
-
-  console.log('asdasd');
   return (
-    <>
-
-    <a id="#section1">
+    <div>
       <div className="first section">
         <h3>
           What is SKYHØGA?
@@ -20,19 +14,13 @@ const WhatIsSkyhoga =  () =>  {
           <br/>The main purpose of the service is to enable its users to easily circumvent prohibiton in areas where such laws are being enforced.
         </p>
       </div>
-    </a>
 
       <div className="second section">
 
 
 
       </div>
-      <div>
-
       </div>
-  </>
 
   )
-}
-
-export default WhatIsSkyhoga
+};

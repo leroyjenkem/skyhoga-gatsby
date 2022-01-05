@@ -1,10 +1,8 @@
-import * as React from 'react'
-import { Link } from 'gatsby'
+import  React from 'react';
 
 function ShowYourSupport () {
   return (
     <>
-    <a id="Show_your_upport">
       <div className="fifth section">
         <h3>
           Show your support
@@ -20,7 +18,6 @@ function ShowYourSupport () {
         </p>
 
       </div>
-    </a>
 
       <div className="sixth section">
 

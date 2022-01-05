@@ -7,6 +7,7 @@ author: admin
 excerpt: ''
 type: page
 id: 3
+template: PrivacyPolicy
 ---
 Who we are
 ----------

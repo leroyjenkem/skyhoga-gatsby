@@ -1,10 +1,10 @@
 // Step 1: Import React
-import * as React from 'react'
-import { Link } from 'gatsby'
-import '../styles/style.css'
+import React from 'react';
+import { Link } from 'gatsby';
+import '../styles/style.css';
 
 // Step 2: Define your component
-const SkyhogaHome = () => {
+export default function SkyhogaHome() {
   return (
     <main>
     <nav className="navbar">
@@ -18,6 +18,4 @@ const SkyhogaHome = () => {
     </nav>
     </main>
   )
-}
-// Step 3: Export your component
-export default SkyhogaHome;
+};
