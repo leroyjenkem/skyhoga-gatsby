@@ -1,8 +1,8 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 
-export default function PageTemplate({ data: { MarkdownRemark }}) {
-  const { frontmatter, html } = { MarkdownRemark };
+export default function PageTemplate({ data: { markdownRemark }}) {
+  const { frontmatter, html } = markdownRemark;
   return (
     <div className="page-container">
       <div className="page">
@@ -21,7 +21,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
     filter: {fileAbsolutePath: {regex: "/pages/.*\\.md$/"}}
   ) {
-    MarkdownRemark( id: { eq: $id } ) {
+    markdownRemark( id: { eq: $id } ) {
       html
       frontmatter {
         title
