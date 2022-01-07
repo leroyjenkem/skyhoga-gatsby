@@ -1,0 +1,30 @@
+
+
+const path require('path')
+exports.createPages = async function ({ actions, graphql }) {
+  const { data } = await graphql(`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            fields {
+              slug
+            },
+            frontmatter {
+              template
+            },
+          }
+        }
+      }
+    }
+  `)
+  data.allMarkdownRemark.edges.forEach(edge => {
+    const slug = edge.node.fields.slug
+    const template = edge.node.frontmatter.template
+    actions.createPage({
+      path: edge.node.fields.slug,
+      component: path.resolve(`./src/markdown-pages/${edge.node.frontmatter.template}.js`),
+      context: { slug: edge.node.fields.slug },
+    })
+  })
+}
