@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://localhost",
+    siteUrl: "https://skyhogagatsbydevvv.gatsbyjs.io/",
     title: 'Skyhoga Gatsby',
     description: 'vittukunvituttaa',
     author: '@lucifer',
