@@ -36,7 +36,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     const pages = queryResults.data.allMarkdownRemark.nodes
     if (pages.MarkdownRemarkFrontmatterType  === 'page') {
-      pages.forEach(node, index => {
+      pages.forEach(node => {
         createPage({
           path: page.slug,
           component:  sitePage,
@@ -60,8 +60,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         slug: String!
         type: MarkdownRemarkFrontmatterType
       }
+      type MarkdownRemarkId @infer {
+        id: String!
+      }
       type MarkdownRemark implements Node @infer {
         frontmatter: MarkdownRemarkFrontmatter
+        id: MarkdownRemarkId
       }
       type Site implements Node {
         siteMetadata: SiteSiteMetadata!
