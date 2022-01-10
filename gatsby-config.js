@@ -1,21 +1,23 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://lindeman.tk",
-    title: "Skyhoga Gatsby",
+    siteUrl: `https://lindeman.tk`,
+    title: `Skyhoga Gatsby`,
   },
   plugins: [
     {
-      resolve: "gatsby-source-wordpress",
+      resolve: `gatsby-source-wordpress`,
       options: {
-        url: "https://lindeman.tk/portfolio/graphql",
+        url: `https://lindeman.tk/portfolio/graphql`,
+
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    "gatsby-plugin-typescript",
-    "gatsby-plugin-image",
-    "gatsby-plugin-slug",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-slug`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-fresnel`,
       options: {
@@ -28,24 +30,24 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: `images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "markdown-pages",
-        path: "./src/markdown-pages/",
+        name: `markdown-pages`,
+        path: `${__dirname}/src/pages/`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
       },
     },
     {
